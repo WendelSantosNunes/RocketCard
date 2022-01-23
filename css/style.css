@@ -1,0 +1,41 @@
+:root {
+  --bg: #000000;
+  --bg-card: #0e1218;
+  --text: #f1f1f1;
+  --img-profile: #8257e5;
+  --buttons: #fff;
+  --border-button: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+
+  width: 90vw;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+body main {
+  max-height: 813px;
+  width: 733px;
+  margin: 50px auto;
+  display: flex;
+}
+
+#card {
+  border: 1px solid red;
+  /* position: relative; */
+}
+
+/* #card :is(.logo, #dados, #profile) {
+  position: absolute;
+} */
