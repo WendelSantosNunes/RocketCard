@@ -1,25 +1,32 @@
-export default function init() {}
+export default function init() {
+  const profileTag = document.querySelector('#profile')
+  const nameTag = document.querySelector('#name')
+  const followers = document.querySelectorAll('[data-dado="followers"]')
+  const following = document.querySelectorAll('[data-dado="following"]')
+  const repository = document.querySelectorAll('[data-dado="repository"]')
+  const location = document.querySelectorAll('[data-dado="location"]')
 
-const profileTag = document.querySelector('#profile')
-const nameTag = document.querySelector('#name')
-const followers = document.querySelector('[data-dado="followers"]')
-const following = document.querySelector('[data-dado="following"]')
-const repository = document.querySelector('[data-dado="repository"]')
-// const company = document.querySelector('[data-dado="company"]')
-const location = document.querySelector('[data-dado="location"]')
+  async function imafetch() {
+    const url = 'https://api.github.com/users/WendelSantosNunes'
+    const dados = await fetch(url)
+    const dadosFinal = await dados.json()
+    const name = dadosFinal.name
 
-async function imafetch() {
-  const url = 'https://api.github.com/users/WendelSantosNunes'
-  const dados = await fetch(url)
-  const dadosFinal = await dados.json()
-  const name = dadosFinal.name
+    nameTag.innerHTML = name
+    profileTag.setAttribute('src', dadosFinal.avatar_url)
 
-  nameTag.innerHTML = name
-  profileTag.setAttribute('src', dadosFinal.avatar_url)
-  followers.innerHTML = dadosFinal.followers
-  following.innerHTML = dadosFinal.following
-  repository.innerHTML = dadosFinal.public_repos
-  location.innerHTML = dadosFinal.location
+    followers[0].innerHTML = dadosFinal.followers
+    followers[1].innerHTML = dadosFinal.followers
+
+    following[0].innerHTML = dadosFinal.following
+    following[1].innerHTML = dadosFinal.following
+
+    repository[0].innerHTML = dadosFinal.public_repos
+    repository[1].innerHTML = dadosFinal.public_repos
+
+    location[0].innerHTML = dadosFinal.location
+    location[1].innerHTML = dadosFinal.location
+  }
+
+  imafetch()
 }
-
-imafetch()

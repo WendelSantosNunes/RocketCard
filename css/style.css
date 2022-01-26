@@ -18,7 +18,14 @@ img {
   box-sizing: border-box;
 }
 
-#card :is(#logo-top, #logo-bottom, #dados, #img) {
+/* #card :is(#logo-top, #logo-bottom, #dados, #img) {
+  position: absolute;
+} */
+
+#card #logo-top,
+#card #logo-bottom,
+#card #dados,
+#card #img {
   position: absolute;
 }
 
@@ -28,23 +35,20 @@ body {
   background-color: var(--bg-card);
   color: var(--text);
 
-  width: 95vw;
+  width: 98vw;
   height: 100vh;
   position: relative;
 
   overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body main {
-  max-width: 813px;
+  width: 813px;
   height: 693px;
-
-  margin: 50px auto;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -134,7 +138,6 @@ body main {
   left: 0.625rem;
   top: 21.875rem;
 
-  /* Ajeitar depois */
   width: 12.5rem;
 }
 
@@ -230,10 +233,15 @@ body main {
   #dados.new {
     display: block;
     width: 5.5rem;
-    top: 20rem;
+
+    top: 23rem;
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  #dados div {
+    margin-bottom: 0.625rem;
   }
 
   #dados .info {
@@ -241,6 +249,7 @@ body main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
 
   #button {
@@ -259,6 +268,10 @@ body main {
 
   #button h1 {
     font-size: 1.25rem;
+  }
+
+  #dados.new {
+    top: 20rem;
   }
 
   #button button {
