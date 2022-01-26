@@ -43,13 +43,18 @@ body {
   overflow-x: hidden;
 
   display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+
+  margin: 0 auto;
 }
 
 body main {
   width: 813px;
   height: 693px;
+
+  margin: auto auto;
 
   display: grid;
   grid-template-columns: [card] 1fr [button] 1fr;
@@ -66,11 +71,11 @@ body main {
   border-radius: 3.125rem;
 
   background-color: #000;
-  padding: 23px 15px 15px 23px;
+  padding: 0.9375rem 1.4375rem 0.9375rem 1.4375rem;
 }
 
 #card {
-  height: 693px;
+  height: 43.3125rem;
 
   background-color: var(--bg-card);
   border-radius: 3.125rem;
@@ -79,8 +84,8 @@ body main {
 }
 
 #logo-top {
-  top: 25px;
-  left: 30px;
+  top: 1.5625rem;
+  left: 1.875rem;
 
   display: flex;
   flex-wrap: wrap;
