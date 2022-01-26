@@ -1,6 +1,6 @@
 # RocketCard
 
-![Página Principal](https://github.com/WendelSantosNunes/Theme-Switcher/blob/main/assets/imgReadme/img1.png?raw=true)
+![Página Principal](https://github.com/WendelSantosNunes/RocketCard/blob/main/img/imgReadme/P%C3%A1gina%20principal.png?raw=true)
 
 ## 💻 **Tecnologias**
 
