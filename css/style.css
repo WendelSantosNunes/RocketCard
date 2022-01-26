@@ -16,6 +16,7 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
 }
 
 /* #card :is(#logo-top, #logo-bottom, #dados, #img) {
@@ -232,12 +233,14 @@ body main {
 
   #dados.new {
     display: block;
-    width: 5.5rem;
+    width: 6rem;
 
-    top: 23rem;
+    top: 21rem;
     left: 0;
     right: 0;
     margin: auto;
+
+    padding: 10px 0;
   }
 
   #dados div {
@@ -266,28 +269,31 @@ body main {
     width: 90vw;
   }
 
+  #dados.new {
+    top: 20rem;
+  }
+  body main #dados p {
+    font-size: 13px;
+  }
+
   #button h1 {
     font-size: 1.25rem;
   }
 
-  #dados.new {
-    top: 20rem;
+  #button button {
+    font-size: 0.875rem;
   }
 
   #button button {
-    font-size: 14px;
-  }
-
-  #button button {
-    padding: 19px 10px;
+    padding: 1.1875rem 0.625rem;
   }
 }
 
-@media (max-width: 165px) {
+@media (max-width: 10.3125rem) {
   body {
     overflow: visible;
   }
   #bg-card {
-    width: 165px;
+    width: 10.3125rem;
   }
 }
