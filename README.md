@@ -18,7 +18,10 @@ Você pode visualizar o layout básico do projeto através desse [link](<https:/
 
 O projeto foi desenvolvido durante o curso Discover ​da Rocketseat.
 
-E esse projeto pretende aprimora os conhecimentos adquirido no modulo Fundamentar e na Maratona da NWL.
+E esse projeto pretende aprimora os conhecimentos adquirido no Discover Fundamentar e na Maratona Mission Origin Heat.
+
+- [Discover Fundamentar](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [Maratona Mission Origin Heat](https://app.rocketseat.com.br/discover/trails/fundamentar)
 
 ## :ringed_planet: **Desafio**
 
