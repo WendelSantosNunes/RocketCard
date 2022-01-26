@@ -26,7 +26,6 @@ export default function initBackgroundColor() {
       bgCard.style.border = '0.0625rem solid black'
       click = 0
     }
-    console.log(click)
   }
 
   button.addEventListener('click', background)

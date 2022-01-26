@@ -37,7 +37,7 @@ body {
   color: var(--text);
 
   width: 98vw;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 
   overflow-x: hidden;
@@ -52,8 +52,7 @@ body main {
   height: 693px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'card button ';
+  grid-template-columns: [card] 1fr [button] 1fr;
   gap: 0.625rem;
 }
 
@@ -62,7 +61,7 @@ body main {
 /* Card */
 
 #bg-card {
-  grid-area: 'card';
+  grid-column: card;
   border: 0.0625rem solid var(--bg);
   border-radius: 3.125rem;
 
@@ -156,7 +155,7 @@ body main {
 
 #button {
   height: 693px;
-  grid-area: 'button';
+  grid-column: button;
 
   display: flex;
   flex-direction: column;
